@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Área Do Cliente</title>
 </head>
 
 <body>
     <header>
-        <h1>
-            Area do cliente
-        </h1>
+        <a href="../homepage/index.html">
+            <img src="../speed_logo_academycinza.png" alt="Speed Academy" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../homepage/index.html">Inicio</a></li>
+                <li><a href="../Sobre Nós/index.html">Sobre Nós</a></li>
+                <li><a href="../Client Area/index.html">Área Do Cliente</a></li>
+            </ul>
+        </nav>
+        <h1>Boas-Vindas a Área Do Cliente</h1>
+        <h3>Selecione uma opção abaixo:</h3>
     </header>
+    <div class="container">
+        <form>
+            <div class="input-container">
+                <div class="area-do-cliente">
+                    <div class="card" onclick="window.location.href='myprofile.html'">
+                        <h2>Perfil</h2>
+                        <p>Ver Meus Dados</p>
+                    </div>
+
+                    <div class="card" onclick="window.location.href='myclasses.html'">
+                        <h2>Aulas</h2>
+                        <p>Acompanhar Aulas</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+
+    </div>
 </body>
 
 </html>
