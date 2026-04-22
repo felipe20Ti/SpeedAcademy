@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 180px;
+  top: 5px;
+  left: 10px;
+  position: absolute;
+  justify-content: flex-start;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-top {
+  z-index: 2000;
+  top: 5px;
+  right: 10px;
+  position: absolute;
+}
+
+.nav-top ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  gap: 20px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.nav-top a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+.nav-top a:hover {
+  transform: scale(1.1);
+}
+
+.nav-top a::after {
+  content: '';
+  width: 0;
+  color: white;
+
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+
+  background: #4facfe;
+
+  transition: width 0.4s ease;
+}
+
+.nav-top a:hover::after {
+  width: 100%;
+}
+
+.nav-main {
+  z-index: 2000;
+  top: 50px;
+  left: 10px;
+  position: fixed;
+  width: 1345px;
+  background-color: rgb(0, 0, 0, 0.7);
+  height: 15vh;
+}
+
+.nav-main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  gap: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-main a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.5s;
+  cursor: pointer;
+  display: flex;
+  padding: 12px;
+}
+
+.nav-main a:hover {
+  transform: scale(1.15);
+  color: #4facfe;
+}
+
+body {
+  background: linear-gradient(1100deg, black, rgb(4, 0, 73), black);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+footer {
+  color: white;
+  position: relative;
+  top: 590px;
+  justify-content: start;
+  display: inline-block;
+}

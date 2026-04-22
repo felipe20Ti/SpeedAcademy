@@ -17,27 +17,32 @@
             <ul>
                 <li><a href="../homepage/index.html">Inicio</a></li>
                 <li><a href="../Sobre Nós/index.html">Sobre Nós</a></li>
-                <li><a href="../Client Area/index.html">Área Do Cliente</a></li>
+                <li><a href="../Client Area Register/index.html">Área Do Cliente</a></li>
             </ul>
         </nav>
     </header>
     <div class="container">
-        <form>
+        <form id="formLogin">
             <h1>Login</h1>
             <div class="input-container">
                 <p class="tag-p">E-mail*</p>
-                <input placeholder="seu@email.com" type="email" required maxlenght="30">
+                <input placeholder="seu@email.com" type="text"  maxlenght="30" autocomplete="off" id="email">
+                <small id="erroEmail"></small>
+
                 <p class="tag-p">Senha*</p>
-                <input placeholder="Senha" type="password" required maxlenght="18"><br>
+                <input placeholder="Senha" type="password"  maxlenght="30" autocomplete="off" id="senha"><br>
+                <small id="erroSenha"></small>
+
                 <a href="../Recover Password/index.html" class="recuperar-senha">Esqueceu sua senha?</a>
                 <p>Não possui uma conta? <a href="../Register/index.html" class="cadastrar-conta">Cadastre-se </a></p>
                 <br>
-
-                <button class="botao-entrar"> <a href="../Login/index.html">ENTRAR</a>
+                
+                <button class="botao-entrar" type="submit"> <a href="../Login/index.html">ENTRAR</a>
                 </button>
             </div>
     </div>
     </form>
+    <script src="login.js"></script>
 </body>
 
 </html>
