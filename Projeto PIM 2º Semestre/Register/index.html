@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../homepage/index.html">
+        <img
+          src="../speed_logo_academycinza.png"
+          alt="Speed Academy"
+          class="logo"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="../homepage/index.html">Inicio</a></li>
+          <li><a href="../Sobre Nós/index.html">Sobre Nós</a></li>
+          <li>
+            <a href="../Client Area Register/index.html">Área do Cliente</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- VALIDAÇÃO DO FORMULARIO -->
+      <form id="formCadastro">
+        <h1>Preencha Seus Dados Abaixo:</h1>
+
+        <div class="input-container">
+          <label>Nome*</label>
+          <input
+            placeholder="Nome Completo"
+            type="text"
+            maxlength="30"
+            id="nomeCadastro"
+            autocomplete="off"
+          />
+          <small id="erroNome"></small>
+
+          <label>Data De Nascimento*</label>
+          <input
+            placeholder="00/00/0000"
+            type="text"
+            maxlength="10"
+            id="nascimentoCadastro"
+            autocomplete="off"
+          />
+          <small id="erroNascimento"></small>
+
+          <label>E-mail*</label>
+          <input
+            placeholder="seu@email.com"
+            type="text"
+            maxlength="30"
+            id="emailCadastro"
+            autocomplete="off"
+          />
+          <small id="erroEmail"></small>
+
+          <label>Repita Seu E-mail*</label>
+          <input
+            placeholder="seu@email.com"
+            type="text"
+            maxlength="30"
+            id="emailConfirmacao"
+            autocomplete="off"
+          />
+          <small id="erroConfirmarEmail"></small>
+          <label>Crie Uma Senha*</label>
+          <input
+            placeholder="Crie Uma Senha"
+            type="password"
+            maxlength="30"
+            id="senhaCadastro"
+            autocomplete="off"
+          />
+          <small id="erroSenha"></small>
+          <label>Repita A Senha*</label>
+          <input
+            placeholder="Repita Sua Senha"
+            type="password"
+            maxlength="30"
+            id="senhaConfirmacao"
+            autocomplete="off"
+          />
+          <small id="erroConfirmarSenha"></small>
+          <button class="button" type="submit">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>

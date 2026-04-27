@@ -1,0 +1,202 @@
+/*CONFIGURAÇÃO PARA ZERAR AS MARGENS DA PAGINA*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*CONFIGURAÇÃO E ESTILIZAÇÃO DO BACKGROUND DA PAGINA*/
+body {
+  background: linear-gradient(1100deg, black, rgb(4, 0, 73), black);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+/*CONFIGURAÇÃO DO TITULO PRINCIPAL DA PAGINA*/
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+/*CONFIGURAÇÃO DO PAINEL SOBRE O FUNDO DO SITE*/
+.container {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 400px;
+  width: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: 1s;
+}
+
+/*CONFIGURAÇÃO DO CAMPO DE ESCRITA*/
+.input-container input {
+  padding: 4px;
+  margin-top: 5px;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 2px solid #4facfe;
+  border-right: 2px solid #4facfe;
+  border-top: none;
+  border-left: none;
+  border-radius: 8px;
+}
+
+/*EFEITO DO CAMPO DE ESCRITA AO CLICAR*/
+.input-container input:focus {
+  outline: 2px solid #4facfe;
+}
+
+/*CONFIGURAÇÃO DO BOTAO CADASTR-SE (LINK)*/
+.cadastrar-conta {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*EFEITO DO BOTAO CADASTRE-SE (LINK)*/
+.cadastrar-conta:hover {
+  text-decoration: underline;
+  color: #3593e6;
+}
+
+/*CONFIGURAÇÃO DO BOTAO DE RECUPERAR SENHA (LINK)*/
+.recuperar-senha {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+/*EFEITO DO BOTAO DE RECUPERAR SENHA*/
+.recuperar-senha:hover {
+  text-decoration: underline;
+  color: #3593e6;
+}
+
+/*CONFIGURAÇÃO DOS PARAGRAFOS*/
+.input-container p {
+  margin-top: 10px;
+}
+
+.tag-p {
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+/*CONFIGURAÇÃO DO BOTAO ENTRAR*/
+.botao-entrar {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #4facfe, #00c6ff);
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transition: 0.5s;
+}
+
+/*EFEITOS DO BOTAO ENTRAR*/
+.botao-entrar a {
+  text-decoration: none;
+  color: white;
+}
+
+.botao-entrar:hover {
+  transform: scale(1.05);
+  color: white;
+  background: linear-gradient(#3593e6);
+  width: 100%;
+}
+
+/*CONFIGURAÇÃO DE NAVEGAÇÃO DA PAGINA*/
+nav {
+  position: fixed;
+  right: 50px;
+  z-index: 1000;
+  top: 20px;
+  width: 100%;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  position: relative;
+}
+
+/*CRIAÇÃO DA LINHA INVISIVEL DE BAIXO DOS LINKS (INICIO, SOBRE NOS E AREA DO CLIENTE*/
+nav a::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+  background: #4facfe;
+
+  transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/*CONFIGURAÇÃO DA LOGO DA PAGINA*/
+.logo {
+  width: 180px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+#p {
+  margin: 0;
+}
+
+small {
+  color: red;
+  margin-top: 3px;
+  font-size: 16px;
+  display: block;
+}

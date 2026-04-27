@@ -1,0 +1,178 @@
+/*CONFIGURAÇÃO PARA ZERAR AS MARGENS DO SITE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*CONFIGURAÇÃO PARA ABA DE NAVEGACAO(HEADER)*/
+nav {
+  position: fixed;
+  right: 50px;
+  top: 20px;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+
+  margin: 0;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav li {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+
+  width: 0;
+  height: 2px;
+  background: #4facfe;
+
+  transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/*CONFIGURAÇÃO DO PAINEL CONTAINER GERAL*/
+body {
+  background: linear-gradient(1100deg, black, rgb(4, 0, 73), black);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  overflow: visible;
+}
+
+/*CONFIGURAÇÃO DO TITULO DA PAGINA*/
+h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 15px;
+}
+
+/*CONFIGURAÇÃO DA TELA SOBRE O FUNDO*/
+.container {
+  width: 400px;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border-radius: 15px;
+}
+
+/*ALINHAMENTO DO PAINEL CONTAINER*/
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*CONFIGURAÇÃO DO CAMPOS DE ESCRITA*/
+.input-container input {
+  padding: 8px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  color: black;
+}
+
+.input-container input:focus {
+  outline: 3px solid #4facfe;
+}
+
+/*CONFIGURAÇÃO DO BOTAO*/
+.button {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4facfe, #00c6ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*EFEITOS DO BOTAO*/
+.button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(#3593e6);
+}
+
+/*CONFIGURAÇÃO DOS PLACEHOLDER DOS INPUTS DE (ESCRITA)*/
+input {
+  color: white;
+  font-weight: bold;
+}
+
+/*CONFIGURAÇÃO DO SELECT DE ESTADOS*/
+select {
+  font-size: 14px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  outline: 2px solid #4facfe;
+}
+
+.logo {
+  width: 180px;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/*MENSAGEM DE ERRO INPUTS*/
+small {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 8px;
+  display: block;
+}
