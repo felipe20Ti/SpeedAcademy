@@ -2,53 +2,59 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="acessibilidade.css" />
     <title>Acessibilidade</title>
   </head>
+
   <body>
     <header>
-      <h1>Acessibilidade Speed Academy</h1>
       <nav class="nav-top">
         <ul>
           <li>
-            <a href="/Projeto PIM 2º Semestre/homepage/index.html"
-              ><em>Inicio</em></a
-            >
+            <a href="/Projeto PIM 2º Semestre/homepage/index.html"><em>Inicio</em></a>
           </li>
           <li>
-            <a
-              href="/Projeto PIM 2º Semestre/homepage/acessibilidade/acessibilidade.html"
-              ><em>Acessibilidade</em></a
-            >
+            <a href="../homepage/acessibilidade/acessibilidade.html">
+              <em>Acessibilidade</em>
+            </a>
           </li>
           <li>
-            <a href="/Projeto PIM 2º Semestre/homepage/suporte/suporte.html"
-              ><em>Suporte</em></a
-            >
-          </li>
-          <li>
-            <a href="/Projeto PIM 2º Semestre/Sobre Nós/index.html"
-              ><em>Sobre Nós</em></a
-            >
-          </li>
-          <li>
-            <a href="/Projeto PIM 2º Semestre/Client Area Register/index.html"
-              ><em>Entrar / Cadastrar</em></a
-            >
+            <a href="../homepage/suporte/suporte.html"><em>Suporte</em></a>
           </li>
         </ul>
       </nav>
-      <nav class="nav-main">
-        <label>Acessibilidade</label>
-        <a>
-          <img
-            src="/Projeto PIM 2º Semestre/speed_logo_academycinza.png"
-            alt="Speed Academy"
-            class="logo"
-          />
-        </a>
-      </nav>
     </header>
+
+    <!-- CONTEÚDO -->
+    <main style="padding: 100px 20px; text-align: center">
+      <h1>Acessibilidade</h1>
+
+      <p>
+        Esta página permite que você ajuste o tamanho do texto para melhor
+        leitura. Utilize os botões no canto da tela.
+      </p>
+    </main>
+
+    <!-- BOTÕES -->
+    <div class="acessibilidade-box">
+<div class="acessibilidade-box">
+  <button onclick="toggleAcessibilidade()">Acessibilidade</button>
+</div>
+
+<div id="controlesTexto">
+  <button onclick="aumentarTexto()">A+</button>
+  <button onclick="diminuirTexto()">A-</button>
+  <button onclick="resetarTexto()">Reset</button>
+</div>
+
+        <div id="controlesTexto" style="display: none">
+          <button onclick="aumentarTexto()">A+</button>
+          <button onclick="diminuirTexto()">A-</button>
+          <button onclick="resetarTexto()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="acessibilidade.js"></script>
   </body>
 </html>

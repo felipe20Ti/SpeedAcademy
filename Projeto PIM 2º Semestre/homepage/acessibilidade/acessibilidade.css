@@ -1,9 +1,11 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* NAV TOP */
 .nav-top {
   z-index: 2000;
   top: 10px;
@@ -12,10 +14,7 @@
 }
 
 .nav-top ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
-
   gap: 20px;
   display: flex;
   justify-content: flex-end;
@@ -25,7 +24,7 @@
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 14px;
-  font-weight: 400px;
+  font-weight: 400; /* corrigido */
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -38,12 +37,9 @@
   width: 0;
   bottom: -5px;
   left: 0;
-
   height: 2px;
   position: absolute;
-
   background: #4facfe;
-
   transition: width 0.4s ease;
 }
 
@@ -55,12 +51,71 @@
   transform: scale(1.05);
 }
 
+/* BODY CORRIGIDO */
 body {
   background: linear-gradient(1100deg, black, rgb(4, 0, 73), black);
   background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  min-height: 100vh; /* permite crescer */
+  display: block; /* remove travamento */
+
+  font-size: 16px; /* base da acessibilidade */
+  color: white;
+}
+
+/* ========================= */
+/* ACESSIBILIDADE (CORRIGIDO) */
+/* ========================= */
+
+/* BOTÃO ACESSIBILIDADE (canto inferior direito, clean) */
+.acessibilidade-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3000;
+}
+
+.acessibilidade-box button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.acessibilidade-box button:hover {
+  transform: scale(1.1);
+}
+
+/* CONTROLES (canto inferior esquerdo, vertical) */
+#controlesTexto {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+
+  display: none; /* começa escondido */
+
   flex-direction: column;
+  gap: 8px;
+}
+
+/* botões A+ A- Reset */
+#controlesTexto button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 20p x;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#controlesTexto button:hover {
+  transform: scale(1.2);
+}
+.ativo {
+  background-color: #4facfe !important;
+  color: #ffffff !important;
+  border-radius: 5rem;
+  padding: 0.85rem;
 }
