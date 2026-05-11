@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 180px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.logo:hover {
+  transform: scale(0.5);
+}

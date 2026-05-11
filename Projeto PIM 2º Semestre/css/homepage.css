@@ -1,0 +1,298 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(110deg, #000000, #0a0030, #000000);
+  color: white;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  backdrop-filter: blur(8px);
+}
+
+.logo img {
+  width: 170px;
+  transition: 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* MENU TOPO */
+.menu-top ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-top a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu-top a:hover {
+  color: #4facfe;
+}
+
+/* MENU CENTRAL */
+.menu-center {
+  display: flex;
+  justify-content: center;
+
+  padding: 20px 0;
+
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.menu-center ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.menu-center a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-center a:hover {
+  color: #4facfe;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+
+  margin-bottom: 25px;
+}
+
+/* BOTÃO HERO */
+.btn-hero {
+  padding: 12px 25px;
+
+  background: #4facfe;
+
+  color: black;
+  text-decoration: none;
+
+  font-weight: bold;
+
+  border-radius: 8px;
+
+  transition: 0.3s;
+}
+
+.btn-hero:hover {
+  transform: scale(1.05);
+}
+
+/* INFO */
+.info-academia {
+  padding: 80px 20px;
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.info-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.titulo-secundario {
+  margin-top: 70px;
+}
+
+/* BENEFICIOS */
+.beneficios-container {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.beneficio {
+  width: 250px;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  transition: 0.3s;
+}
+
+.beneficio:hover {
+  transform: translateY(-5px);
+}
+
+/* SOBRE */
+.sobre-texto {
+  margin-bottom: 40px;
+
+  color: #ccc;
+
+  font-size: 1.1rem;
+}
+
+.sobre-cards {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.sobre-card {
+  width: 280px;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  transition: 0.3s;
+}
+
+.sobre-card:hover {
+  transform: translateY(-8px);
+}
+
+/* PLANOS */
+.planos {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.planos-container {
+  display: flex;
+
+  justify-content: center;
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  margin-top: 30px;
+}
+
+.plano {
+  width: 220px;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  transition: 0.3s;
+}
+
+.plano:hover {
+  transform: scale(1.05);
+}
+
+.plano.destaque {
+  border: 2px solid white;
+}
+
+.preco {
+  margin-top: 10px;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* CTA */
+.cta {
+  padding: 80px 20px;
+  text-align: center;
+
+  background: linear-gradient(90deg, #4facfa, #0066ff);
+}
+
+.btn-cta {
+  display: inline-block;
+
+  margin-top: 20px;
+  padding: 12px 25px;
+
+  background: black;
+
+  color: white;
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn-cta:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+  padding: 20px;
+  text-align: center;
+
+  background: black;
+
+  color: #777;
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
